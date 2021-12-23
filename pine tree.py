@@ -28,10 +28,6 @@ def draw_circle(screen):
     pygame.draw.circle(screen,random_color,(210, 393),10)
     pygame.draw.circle(screen,random_color,(340, 393),10)
 
-# def draw_star(screen):
-#     point_list = [(250,150),(305,100),(315,165),(308,170),(310,180),(300,173),(330,140),(306,340),(150,260),(100,155)]
-#     pygame.draw.polygon(screen,STARRY,point_list)
-
 def main():
     global running
     random_pos = (80,80)
@@ -54,8 +50,7 @@ def main():
         
         draw_tree(screen)
         draw_circle(screen)
-        #draw_star(screen)
-
+        
         screen.blit(text,(random_pos))
         pygame.draw.rect(screen,WHITE,(random_pos[0],random_pos[1],text_box[2],text_box[3]))
         screen.blit(text,random_pos)
